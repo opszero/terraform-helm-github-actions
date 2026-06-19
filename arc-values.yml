@@ -1,0 +1,12 @@
+githubConfigUrl: ${github_config_url}
+
+githubConfigSecret:
+  github_token: ${github_pat}
+
+containerMode:
+  type: dind
+
+  kubernetesModeWorkVolumeClaim:
+    resources:
+      requests:
+        storage: 5Gi
