@@ -11,12 +11,12 @@
 |------|-------------|------|---------|:--------:|
 | <a name="input_config_url"></a> [config\_url](#input\_config\_url) | Example: https://github.com/opszero | `string` | n/a | yes |
 | <a name="input_github_pat"></a> [github\_pat](#input\_github\_pat) | GitHub Personal Access Token with repo permissions | `string` | n/a | yes |
-| <a name="input_k8s_name"></a> [k8s\_name](#input\_k8s\_name) | Name of the Kubernetes release | `string` | `"arc-runner-set"` | no |
 | <a name="input_k8s_namespace"></a> [k8s\_namespace](#input\_k8s\_namespace) | Kubernetes namespace to deploy the release in | `string` | `"github-actions"` | no |
 ## Resources
 
 | Name | Type |
 |------|------|
+| [helm_release.arc](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) | resource |
 | [helm_release.arc_runner_set](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) | resource |
 ## Outputs
 
