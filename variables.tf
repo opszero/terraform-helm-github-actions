@@ -1,9 +1,3 @@
-variable "k8s_name" {
-  type        = string
-  default     = "arc-runner-set"
-  description = "Name of the Kubernetes release"
-}
-
 variable "k8s_namespace" {
   type        = string
   default     = "github-actions"

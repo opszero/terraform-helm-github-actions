@@ -6,6 +6,6 @@ githubConfigSecret:
 containerMode:
   type: kubernetes-novolume
 
-controllerServiceAccount:
-  namespace: ${k8s_namespace}
-  name: arc-runner-set-controller
+# controllerServiceAccount:
+#   namespace: ${k8s_namespace}
+#   name: arc-runner-set-controller
