@@ -6,10 +6,12 @@ resource "helm_release" "arc_runner_set" {
   repository = "oci://ghcr.io/actions/actions-runner-controller-charts"
   chart      = "gha-runner-scale-set"
 
+  # https://github.com/actions/actions-runner-controller/blob/master/charts/gha-runner-scale-set/values.yaml
   values = [
     templatefile("${path.module}/arc-values.yaml", {
       github_config_url = var.config_url
       github_pat        = var.github_pat
+      k8s_namespace     = var.k8s_namespace
     })
   ]
 }
